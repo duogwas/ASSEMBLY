@@ -14,7 +14,7 @@ void main()
     cout << "\n\n\n           BAI TAP LON MON LTHT";
     cout << "\n\n\n     Cac SV thuc hien:";
     cout << "\n      1. Kieu Hoang Duong     Lop: 1910A03";
-    cout << "\n      2. Nguyen Dinh Phuoc    Lop: 1910A05";
+    cout << "\n      2. Nguyen Dinh Phuoc    Lop: 1910A02";
     cout << "\n      3. Tran Van Tien        Lop: 1910A05";
     cout << "\n\n\n     Co tiep tuc CT (c/k)? ";
     cin >> tl;
