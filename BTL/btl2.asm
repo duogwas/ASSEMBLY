@@ -5,6 +5,7 @@ INCLUDE lib1.asm
      snt1   db 13, 10, '      TIM CAC SO NGUYEN TO'
             db 13, 10, '      --------------------'
             db 13, 10, '   Hay vao so gioi han: $'
+     msg db 13, 10, ' So gioi han phai lon hon hoac bang 2$'       
      snt2   db '   Cac so nguyen to tu 2 den $'
      snt3   db ' la: $'
      space  db ' $'
@@ -16,15 +17,27 @@ PUBLIC @SONT$qv
      PS:  
           mov        ax,@data
           mov        ds,ax
-     L0:  
           CLRSCR
+     L0:        
           HienString snt1
           call       VAO_SO_N
+
+     LCheck:
+          cmp ax,2
+	     jb   LMSG		; Đúng là ≤ 2 thì nhảy ;nhay khi dich<nguon
+          jmp  LAC
+
+     LMSG:
+          HienString msg
+          jmp L0;
+     
+     LAC:
           HienString snt2
           call       HIEN_SO_N
           HienString snt3
           mov        bx,ax
           mov        so,1
+      
      L1:  
           inc        so
           mov        ax,so

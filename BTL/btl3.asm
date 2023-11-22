@@ -19,7 +19,7 @@ PUBLIC     @CONGLPT$qv
           mov        ds,ax
           CLRSCR
           HienString M1
-          int        11h
+          int        11h; 411h chua thong tin cong lpt dduwa vao ah
           mov        al,ah
           mov        cl,6
           shr        al,cl

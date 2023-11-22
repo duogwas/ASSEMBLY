@@ -1,1 +1,1 @@
-t:\TC\BIN\tcc -ms -It:\TC\INCLUDE -Lt:\TC\LIB %1 %2 %3 %4
+t:\TC\BIN\tcc -ms -It:\TC\INCLUDE -Lt:\TC\LIB %1 %2 %3 %4 %5

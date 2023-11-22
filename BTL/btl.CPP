@@ -3,6 +3,7 @@
 extern XOATM();
 extern SONT();
 extern CONGLPT();
+extern CNCD();
 void main()
 {
     char tl;
@@ -28,10 +29,11 @@ void main()
             cout << "\n\n     1. Chuc nang RD";
             cout << "\n     2. Tim cac so nguyen to";
             cout << "\n     3. So luong cong LPT va dia chi";
-            cout << "\n     4. Thoat khoi chuong trinh";
+            cout << "\n     4. Chuc nang CD";
+            cout << "\n     5. Thoat khoi chuong trinh";
             cout << "\n\n     Hay chon: ";
             cin >> cn;
-            while (cn <= 0 || cn >= 5)
+            while (cn <= 0 || cn >= 6)
             {
                 cout << "\n     Nhap khong hop le!, vui long nhap lai: ";
                 cin >> cn;
@@ -48,6 +50,9 @@ void main()
                 CONGLPT();
                 break;
             case 4:
+                CNCD();
+                break;    
+            case 5:
                 cout << "     Cam on da su dung he thong!\n";
                 return;
             default:
